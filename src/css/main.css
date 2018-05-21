@@ -1,0 +1,389 @@
+html, body {
+	height: 100%;
+}
+
+html {
+	font-size: 10px;
+}
+
+@media screen and (min-width:1200px) and (max-width:1279px){html{font-size: 8px}}
+@media screen and (max-width:1200px){html{font-size: 6px}}
+
+body {
+	margin: 0;
+}
+
+ul {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+li {
+	list-style: none;
+}
+
+h6 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+i {
+	font-style: normal;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+#app {
+	display: flex;
+	/*overflow: hidden;
+	min-width: 1000px;*/
+}
+
+.menu {
+	/*position: fixed;*/
+	width: 17.916%;
+	min-width: 160px;
+	/*width: 258px;*/
+	/*height: 100%;*/
+	float: left;
+	border-right: 1px solid #eaeef8;
+	box-sizing: border-box;
+}
+
+.menu .wrap {
+	position: fixed;
+	width: 17.83%;
+	min-width: 160px;
+}
+
+.user {
+	line-height: 68px;
+}
+
+.user img {
+	margin-left: 22px;
+	margin-right: 11px;
+	vertical-align: middle;
+}
+
+.user-profile {
+	margin-left: 22px;
+}
+.user-name {
+	margin-left: 11px;
+	font-size: 1.6rem;
+	color: #666666;
+}
+
+.nav .item {
+	position: relative;
+	height: 48px;
+	line-height: 48px;
+	padding-left: 47px;
+	font-size: 1.4rem;
+	color: #999999;
+	cursor: pointer;
+}
+
+.nav .item:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 47px;
+	height: 48px;
+}
+
+.nav .item:nth-child(1):after {
+	background: url(../img/static-icon.png) no-repeat;
+	background-position: 22px 17px;
+	background-size: 15px 15px;
+}
+
+.nav .item:nth-child(2):after {
+	background: url(../img/store-icon.png) no-repeat;
+	background-position: 22px 17px;
+	background-size: 15px 15px;
+}
+
+.nav .item:nth-child(3):after {
+	background: url(../img/custom-icon.png) no-repeat;
+	background-position: 22px 17px;
+	background-size: 15px 15px;
+}
+
+.nav .item:hover, .nav .active {
+	background-color: #f7f9ff;
+	color: #769af3;
+}
+
+.container {
+	overflow: hidden;
+	flex-grow: 1;
+	/*margin-left: 17.916%;*/
+	/*margin-left: 258px;*/
+	padding-left: 36px;
+	padding-right: 36px;
+	padding-bottom: 34px;
+}
+
+.block {
+	margin-top: 34px;
+}
+
+.block-title {
+	height: 52px;
+	line-height: 52px;
+	font-size: 1.6rem;
+	font-weight: normal;
+	color: #666666;
+}
+
+.overview {
+	display: flex;
+	justify-content: space-between;
+}
+
+.overview li {
+	position: relative;
+	width: 31.5135%;
+	/*width: 350px;*/
+	height: 110px;
+	line-height: 110px;
+	flex: 0 1 auto;
+	color: #ffffff;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-align: center;
+
+}
+
+.overview li:nth-child(1) {
+	background-image: url(../img/total-node.png);
+}
+
+.overview li:nth-child(2) {
+	background-image: url(../img/new-node.png);
+}
+
+.overview li:nth-child(3) {
+	background-image: url(../img/broken-node.png);
+}
+
+.overview span {
+	position: absolute;
+	top: 14px;
+	left: 17px;
+	/*margin-left: 17px;
+	line-height: 50px;*/
+	line-height: 1.6rem;
+	font-size: 1.6rem;
+}
+
+.overview i {
+	font-size: 3rem;
+}
+
+.status {
+	display: flex;
+	justify-content: space-between;
+}
+
+.status li {
+	position: relative;
+	flex: 0 1 auto;
+	width: 23.4445%;
+	height: 110px;
+	padding-left: 9.9188%;
+	background-color: #f7f9ff;
+	box-sizing: border-box;
+}
+
+.status span {
+	display: block;
+	line-height: 4rem;
+	font-size: 1.6rem;
+	color: #3764d3;
+}
+
+.status i {
+	display: block;
+	line-height: 3.2rem;
+	font-size: 2.4rem;
+	color: #273351;
+}
+
+.status li:after {
+	content: '';
+	position: absolute;
+	top: 20px;
+	left: 7.6923%;
+	width: 26.923%;
+	height: 70px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.status li:nth-child(1):after {
+	background-image: url(../img/cpu.png);
+}
+
+.status li:nth-child(2):after {
+	background-image: url(../img/ram.png);
+}
+
+.status li:nth-child(3):after {
+	background-image: url(../img/hd.png);
+}
+
+.status li:nth-child(4):after {
+	background-image: url(../img/net.png);
+}
+
+/* --- 故障节点 --- */
+.broken {
+	display: flex;
+	justify-content: space-between;
+}
+
+.broken-item {
+	position: relative;
+	flex: 0 1 auto;
+	width: 23.4445%;
+	height: 166px;
+	padding: 0 12px;
+	background-color: #f7f9ff;
+	box-sizing: border-box;
+}
+
+.broken .active {
+	background-color: #ffffff;
+	box-shadow: 0 0 5px 0 rgba(3, 21, 63, 0.20);
+}
+
+.broken .name {
+	display: inline-block;
+	height: 4.6rem;
+	line-height: 4.6rem;
+	font-size: 1.4rem;
+	color: #273351;
+}
+
+.broken .repair {
+	position: absolute;
+	top: 12px;
+	right: 13px;
+	/*width: 39px;*/
+	height: 1.8rem;
+	line-height: 1.8rem;
+	padding: 0 3px 0 16px;
+	font-size: 1rem;
+	background-image: linear-gradient(-90deg, #82A6FF 0%, #769AF3 95%);
+	box-shadow: 0 0 2px 0 rgba(5, 15, 47, 0.20);
+	border-radius: 2px;
+	color: #ffffff;
+}
+
+.broken .repair:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 4px;
+	width: 10px;
+	height: 10px;
+	margin-top: -5px;
+	background-image: url(../img/repair.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+}
+
+.broken .info {
+	font-size: 1.4rem;
+	color: #273351;
+}
+
+.broken .info-item {
+	line-height: 28px;
+}
+
+/* --- 故障节点 --- */
+
+.working {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.working li {
+	position: relative;
+	flex: 0 1 auto;
+	width: 31.5135%;
+	height: 220px;
+	margin-bottom: 17px;
+	padding-left: 9.9188%;
+	background-color: #f7f9ff;
+	border: 1px solid #e8ecf8;
+	box-sizing: border-box;
+}
+
+.working .active {
+	box-shadow: 0 0 5px 0 rgba(3, 21, 63, 0.20);
+}
+
+.working .sync {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 45px;
+	height: 45px;
+}
+
+.working .sync {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 45px;
+	height: 45px;
+}
+
+.working .sync:before {
+	content: '';
+	position: absolute;
+	top: 8px;
+    right: 4px;
+    width: 15px;
+	height: 15px;
+	background-image: url(../img/sync.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	transform: rotate(0deg);
+	transition: transform 1s;
+	z-index: 1;
+}
+
+.working .sync:hover:before {
+	transform: rotate(360deg);
+}
+
+.working .sync:after {
+	content: '';
+	position: absolute;
+	top: -17px;
+    right: -25px;
+    width: 62px;
+	height: 45px;
+	background-image: linear-gradient(#82a6ff 0%, #769af3 100%);
+	transform: rotate(45deg);
+}
+
+

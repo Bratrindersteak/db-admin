@@ -1,0 +1,11 @@
+{
+	"menu": [
+		{
+			"集群状态": "static-icon.png"
+		}, {
+			"管理库": "store-icon.png"
+		}, {
+			"用户管理": "custom-icon.png"
+		}
+	]
+}
